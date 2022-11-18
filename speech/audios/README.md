@@ -1,0 +1,1 @@
+Temporary files will be stored here and you are free to delete them.
