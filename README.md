@@ -1,14 +1,20 @@
 # SmartAppToHelpSeniorsAPI
+![SmartAppToHelpSeniorsAPI](https://azurecomcdn.azureedge.net/cvt-342af4abf51292fe470c0f54c8b878f696465f7b08177b0a21f80ffab347bd93/images/page/home/december-hero-desktop.webp)
+[![License](https://img.shields.io/github/license/youngzm339/SmartAppToHelpSeniorsAPI)](https://github.com/youngzm339/SmartAppToHelpSeniorsAPI/blob/master/LICENSE)
+[![Issues](https://img.shields.io/github/issues/youngzm339/SmartAppToHelpSeniorsAPI)](https://github.com/youngzm339/SmartAppToHelpSeniorsAPI/issues)
+[![Stars](https://img.shields.io/github/stars/youngzm339/SmartAppToHelpSeniorsAPI)](https://github.com/youngzm339/SmartAppToHelpSeniorsAPI)
 ## AI implementations based on Azure AI platform 基于Azure AI平台的AI实现
 This project does a number of AI implementations based on Azure AI platform. Before using it, please make sure you have introduced the KEY and other parameters correctly, check the code for the parameters you may need.
 
 本项目基于Azure AI 平台做了许多AI的实现。在使用之前，请确保已经正确引入了KEY和其它参数，请查阅代码以了解你可能需要的参数。
 
 ## Principles for Developers 开发者原则
-This is part of an project for the 2023 Microsoft Imagine Cup from the Void Adventure team at Henan University of Technology,China.
-By using this project, you should ensure that you follow the MIT license and DO NOT use this project to participate in the 2023 Microsoft Imagine Cup 2023.
+This is part of an project for the 2023 Microsoft Imagine Cup from team Void Adventure at Henan University of Technology,China.
+
+By using this project, you should ensure that you follow the MIT license and DO NOT use this project to participate in the 2023 Microsoft Imagine Cup.
 
 这是中国河南工业大学Void Adventure团队为2023年微软创新杯所做的项目的一部分。
+
 在使用这个项目时，你应该确保遵循MIT许可，并且不要使用这个项目来参加2023年的微软创新杯。
 
 # ###
@@ -70,7 +76,10 @@ POST ; enctype='multipart/form-data'
 |---|---|
 |text_input|"str"|
 
-Example of response 响应的返回实例:
+#### Example of request 请求实例:
+text_input:"支付宝怎么打开健康码"
+
+#### Example of response 响应的返回实例:
 
 ```
 {
@@ -92,6 +101,9 @@ POST ; enctype='multipart/form-data'
 |key|vaule|
 |---|---|
 |text_input|"str"|
+
+#### Example of request 请求实例:
+text_input:"支付宝怎么打开健康码"
 
 #### Example of response 响应的返回实例:
 [5123123213.wav]
