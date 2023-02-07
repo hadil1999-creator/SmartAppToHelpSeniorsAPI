@@ -7,37 +7,37 @@
 
 README of supported languages: [English](./README.md)  |  [简体中文](./README-zh_CN.md)
 
-## AI implementations based on Azure AI platform
-This project does a number of AI implementations based on Azure AI platform. Before using it, please make sure you have introduced the KEY and other parameters correctly, check the code for the parameters you may need.
+## 基于Azure AI平台的AI实现
+本项目基于Azure AI 平台做了许多AI的实现。在使用之前，请确保已经正确引入了KEY和其它参数，请查阅代码以了解你可能需要的参数。
 
-You may need to read [Azure Cognitive Services documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/) to get a general idea of the features before using this project.
+在使用这个项目之前，您可能需要阅读[Azure Cognitive Services documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/)，以便对其功能有一个大致了解。
 
-## Principles for Developers 
-This is part of an project for participate in the 2023 Microsoft Imagine Cup.
+## 开发者原则
+这是为参与2023年微软创新杯所做的项目的一部分。
 
-By using this project, you should ensure that you follow the MIT license and DO NOT use this project to participate in the 2023 Microsoft Imagine Cup.
+在使用这个项目时，你应该确保遵循MIT许可，并且不要使用这个项目来参加2023年的微软创新杯。
 
 # ###
 # ###
-## Interface 
+## 接口
 baseURL: example.com
 
 # #########
-### Speech to Text 
-#### Request Address :
+### Speech to Text 语音转文字
+#### 请求地址：
 https://example.com/api/speech/speech2text
 
-#### Request Method :
-HTTP POST with multipart/form-data Content-Type
+#### 请求方式：
+POST ; enctype='multipart/form-data'
 
 |key|vaule|
 |---|---|
 |audio_input|[audiofile](.mp3 or .wav)|
 
-#### Example of request :
+#### 请求实例:
 audio_input:[123.wav]
 
-#### Example of response :
+#### 响应的返回实例:
 ```
 {
     "code": "200",
@@ -47,39 +47,39 @@ audio_input:[123.wav]
 ```
 
 # #########
-### Text to Speech 
-#### Request Address :
+### Text to Speech 文字转语音
+#### 请求地址：
 https://example.com/api/speech/text2speech
-#### Request Method :
-HTTP POST with multipart/form-data Content-Type
+#### 请求方式：
+POST ; enctype='multipart/form-data'
 
 |key|vaule|
 |---|---|
 |text_input|"str"|
 
-#### Example of request :
+#### 请求实例:
 text_input:"语音生成"
 
-#### Example of response :
+#### 响应的返回实例:
 [5123123213.wav]
 
 
 # #########
 ### Customized Q&A
-#### Request Address :
+#### 请求地址：
 https://example.com/api/speech/talk
 
-#### Request Method :
-HTTP POST with multipart/form-data Content-Type
+#### 请求方式：
+POST ; enctype='multipart/form-data'
 
 |key|vaule|
 |---|---|
 |text_input|"str"|
 
-#### Example of request :
+#### 请求实例:
 text_input:"支付宝怎么打开健康码"
 
-#### Example of response :
+#### 响应的返回实例:
 
 ```
 {
@@ -92,36 +92,36 @@ text_input:"支付宝怎么打开健康码"
 
 # #########
 ### Customized Q&A Audio
-#### Request Address :
+#### 请求地址：
 https://example.com/api/speech/talk_audio
 
-#### Request Method :
-HTTP POST with multipart/form-data Content-Type
+#### 请求方式：
+POST ; enctype='multipart/form-data'
 
 |key|vaule|
 |---|---|
 |text_input|"str"|
 
-#### Example of request :
+#### 请求实例:
 text_input:"支付宝怎么打开健康码"
 
-#### Example of response :
+#### 响应的返回实例:
 [5123123213.wav]
 
 
 # #########
-### Image Analysis 
-#### Request Address :
+### Image Analysis 图像分析
+#### 请求地址：
 https://example.com/api/cv/image4analysis
 
-#### Request Method :
-HTTP POST with multipart/form-data Content-Type
+#### 请求方式：
+POST ; enctype='multipart/form-data'
 
 |key|vaule|
 |---|---|
-|img_input|Image file|
+|img_input|图像文件|
 
-#### Example of response :
+#### 响应的返回实例:
 
 ```
 {
